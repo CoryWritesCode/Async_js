@@ -89,18 +89,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   number.then((value) => {
     console.log(value);
-    return(value)
+    return ((value * 2));
   }).then((value) => {
-    let newValue = value * 2;
-    console.log(newValue);
-    return(newValue);
+    console.log(value);
+    return ((value * 4));
   }).then((value) => {
-    let newValue = value * 4;
-    console.log(newValue);
-    return(newValue);
+    console.log(value);
+    return ((value * 6))
   }).then((value) => {
-    let newValue = value * 6;
-    console.log(newValue);
+    console.log(value);
   }).catch((err) => {
     console.log(err);
   });
